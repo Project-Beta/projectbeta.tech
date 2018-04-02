@@ -19,13 +19,12 @@
 			var hasTrailingSlash = path[path.length-1] === '/';
 		
 			if(hasTrailingSlash) {
-		
-			  //if last charcter is a slash, return the same url without the slash  
-			  var newPath = path.substr(0, path.length - 1); 
-			  return newPath; 
+				//if last charcter is a slash, return the same url without the slash  
+				var newPath = path.substr(0, path.length - 1); 
+				return newPath; 
 			} 
 		
-		  });
+		});
 
 		$urlRouterProvider.otherwise('/404');
 
