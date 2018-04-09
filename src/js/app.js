@@ -121,6 +121,19 @@
 					mainEl.scroll(0,0);
 					uiContainer.style.justifyContent = "space-between";
 				}
+			})
+
+			.state('apply', {
+				url: '/apply',
+				templateUrl: 'partials/apply.html',
+				data: { pageTitle: 'Apply \u00B7 ProjectBeta' },
+				onEnter: function() {
+					if (isMobile) {
+						setTimeout(sidebarClose, 100);
+					}
+					mainEl.scroll(0,0);
+					uiContainer.style.justifyContent = "space-between";
+				}
 			});
 		
 		$locationProvider.html5Mode(true);
