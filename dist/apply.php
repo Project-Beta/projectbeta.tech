@@ -34,7 +34,7 @@ $headers .= "From: ProjectBeta <noreply@projectbeta.tech>"."\r\n";
 $headers .= "X-Sender: ProjectBeta < noreply@projectbeta.tech >\n";
 $headers .= 'X-Mailer: PHP/' . phpversion();
 $header.= "X-Priority: 1\r\n";
-$to2 = "plibither8@projectbeta.tech";
+$to2 = "plibither8@gmail.com";
 
 if(isset($_POST['submit'])) {
 	$name = $_POST['name'];
