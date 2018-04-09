@@ -2,7 +2,7 @@
 
 	<head>
 		<title>Apply | ProjectBeta</title>
-		<meta http-equiv="refresh" content="1.5;url=ttps://projectbeta.tech" />
+		<meta http-equiv="refresh" content="1;url=ttps://projectbeta.tech" />
 	</head>
 
 <?php
