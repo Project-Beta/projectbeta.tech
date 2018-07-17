@@ -1,0 +1,305 @@
+section.sidebar
+    height 100%
+    background darkBlueGrey
+    position fixed
+    top 0
+    left 0
+    border-right 1px solid #0e0f10
+    font-weight 500
+    user-select none
+    overflow-y auto
+    overflow-x hidden
+    -webkit-overflow-scrolling touch
+    z-index 2
+    transition 0.05s all ease-out
+
+    > .container
+        flex-direction column
+        justify-content flex-start
+        align-items flex-start
+        overflow-x hidden
+
+        &::-webkit-scrollbar
+            width 6px
+
+        &::-webkit-scrollbar-thumb
+            background #bbb
+
+        &::-webkit-scrollbar-track
+            background #3e4044
+
+    &.open
+        width 250px
+
+    &.closed
+        display flex
+        align-items center
+        width 50px
+        flex-direction column
+
+        #heading
+            padding 0
+            flex-direction row
+            transform rotate(-90deg)
+            background transparent
+            position absolute
+            bottom 50%
+            border none
+            min-height auto
+
+            img
+                margin-right 10px
+                height 40px
+                width 40px
+                margin-bottom 0
+
+            a
+                text-decoration none
+
+                &.image, &.h1
+                    margin 0
+
+        #sidebar-content, #footer
+            display none
+
+    > svg
+        fill #ccc
+        position fixed
+        top 0
+        z-index 1
+        cursor pointer
+
+        &#hamburger
+            height 40px
+            margin-top 8px
+
+        &#cross
+            margin 15px 0 0 15px
+
+#heading
+    margin 0 auto
+    background #161719
+    flex-direction column
+    border-bottom 1px solid #0e0f10
+    width 100%
+    min-height 190px
+
+    a
+        text-decoration none !important
+
+        &.image
+            margin-bottom 10px
+
+        &.h1
+            margin-top 10px
+
+    h1
+        font-size 30px
+        color #ffffff
+
+    img
+        height 80px
+        width 80px
+        box-sizing content-box
+
+#sidebar-content
+    width 100%
+    flex 1 0 auto
+
+.subject
+    background #fff2
+    height 28px
+    justify-content flex-start
+    cursor pointer
+    border-bottom 1px solid #0e0f10
+
+    p
+        color #ddd
+        font-family "Ubuntu"
+        font-size 15px
+        text-transform uppercase
+
+    .triangle
+        margin 0 6px
+
+#files
+    width 100%
+    padding-bottom 20px
+    overflow-y auto
+    overflow-x hidden
+    border-bottom 1px solid #0e0f10
+
+    .container
+        overflow hidden
+
+        ul
+            width 100%
+
+            li
+                width 100%
+                color #eee
+                cursor pointer
+
+                a
+                    width auto
+                    display block
+                    text-decoration none
+                    padding 5px 0 5px 34px
+                    font-size 14px
+                    letter-spacing 0.5px
+
+                    &.level2
+                        margin-left 0px
+
+                    &:focus
+                        box-shadow inset 0 0 0 2px #666 !important
+                        border none
+                        outline none
+
+                &:hover
+                    background #ffffff11
+
+                &.level2
+
+                    a
+                        padding-left 10px
+                        margin-left 34px
+                        border-left 1px solid
+
+                    &.events
+
+                        a
+                            border-left-color #44474a !important
+
+#notifications
+    border-bottom 1px solid #0e0f10
+
+    ul
+
+        a
+            text-decoration none
+            width 100%
+            height 100%
+            display block
+            padding 10px 0
+
+        li
+            color #bbb
+            padding-left 20px
+            font-size 14px
+
+#countdown
+    border-bottom 1px solid #0e0f10
+
+    .timer
+        width 100%
+        padding 10px 0
+        justify-content space-around
+
+        .flex
+            flex-direction column
+
+            p
+                font-size 16px
+                color white
+                font-family monospace
+
+            h2
+                font-size 14px
+                color white
+                font-variant small-caps
+
+#social
+    width 100%
+
+    ul
+        width 100%
+        padding-bottom 20px
+        padding 5px 0
+
+        li
+            width 100%
+            height 26px
+            cursor pointer
+
+            a
+                width 100%
+                text-decoration none
+                padding-left 20px
+                font-size 14px
+                letter-spacing 0.5px
+                justify-content flex-start
+                display inline-flex
+                height 100%
+                color inherit
+
+                svg
+                    height 15px
+                    margin 0 10px 0 0
+
+                    path
+                        fill white
+
+                    &:nth-child(2)
+                        margin 0 15px
+
+            &:nth-child(1)
+                color blue
+                svg
+                    path
+                        fill blue
+            &:nth-child(2)
+                color #6cc644
+                svg
+                    path
+                        fill #6cc644
+            &:nth-child(3)
+                color #ef5b77
+                svg
+                    path
+                        fill #ef5b77
+
+            &:hover
+                background #ffffff11
+
+.triangle
+    width 0
+    height 0
+    border-style solid
+    display inline-block
+    margin-right 6px
+
+    &.closed
+        border-width 4px 0 4px 8px
+        border-color transparent transparent transparent white
+
+    &.open
+        border-width 0 0 8px 8px
+        border-color transparent transparent white transparent
+
+    &#aboutTriangle
+        &.open
+            border-bottom-color yellow
+        &.closed
+            border-left-color yellow
+
+    &#eventsTriangle
+        &.open
+            border-bottom-color green
+        &.closed
+            border-left-color green
+
+#footer
+    background #0003
+    flex-direction column
+    width 100%
+    color #666
+    text-transform uppercase
+    font-size 12px
+    min-height 52px
+    border-top 1px solid #0e0f10
+    margin-top 30px
+    flex-shrink 0
+
+    p:first-child
+        margin-bottom 5px

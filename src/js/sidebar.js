@@ -1,10 +1,10 @@
 // Open-Close Files
 
-/*
-var aboutButton = document.querySelector("#files li:nth-child(2)");
-var eventsButton = document.querySelector("#files li:nth-child(6)");
 
-aboutButton.addEventListener('click', openCloseFiles('about'));
+// var aboutButton = document.querySelector("#files li:nth-child(2)");
+var eventsButton = document.querySelector("#files li:nth-child(4)");
+
+// aboutButton.addEventListener('click', openCloseFiles('about'));
 eventsButton.addEventListener('click', openCloseFiles('events'));
 
 function openCloseFiles(target) {
@@ -27,7 +27,7 @@ function openCloseFiles(target) {
 		}
 	};
 }
-*/
+
 
 // Open-Close Tabs
 var buttons = document.querySelectorAll(".subject");

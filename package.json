@@ -2,21 +2,23 @@
   "name": "ProjectBeta",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/plibither8/ProjectBeta.tech.git"
   },
-  "author": "KSL+plibither8",
+  "author": "plibither8",
   "bugs": {
     "url": "https://github.com/plibither8/ProjectBeta.tech/issues"
   },
   "homepage": "https://github.com/plibither8/ProjectBeta.tech#readme",
   "dependencies": {
-    "x-tag": "^1.5.11"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
   },
   "devDependencies": {
     "autoprefixer": "^8.2.0",
