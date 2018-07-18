@@ -36,17 +36,6 @@ section.sidebar.open
 
                         li.level1
                             a(ui-sref="home").yellow home
-                        //- li.level1
-                        //- 	a.yellow.level2
-                        //- 		#aboutTriangle.triangle.closed
-                        //- 		|about
-
-                        //- li.level2.about.nodisplay
-                        //- 	a(ui-sref="team").yellow team.html
-                        //- li.level2.about.nodisplay
-                        //- 	a(ui-sref="history").yellow history.html
-                        //- li.level2.about.nodisplay
-                        //- 	a(ui-sref="alumni").yellow alumni.html
 
                         li.level1
                             a(ui-sref="team").blue team
@@ -54,27 +43,33 @@ section.sidebar.open
                             a(ui-sref="alumni").red alumni
 
                         li.level1
-                            a(href="#").green.level2
-                                #eventsTriangle.triangle.closed
+                            a(href="#").green.level2#eventTab
+                                #eventsTriangle.triangle.open
                                 |events
 
-                        li.level2.events.nodisplay
-                            a(href="#").white Function Overload
+                        li.level2.events
+                            a(href="events#function-overload").white
+                                | Function Overload
 
-                        li.level2.events.nodisplay
-                            a(href="#").white E-Sports
+                        li.level2.events
+                            a(href="events#rush-b").white
+                                | Rush_B
 
-                        li.level2.events.nodisplay
-                            a(href="#").white Monochrome
+                        li.level2.events
+                            a(href="events#monochrome").white
+                                | Monochrome
 
-                        li.level2.events.nodisplay
-                            a(href="#").white Wit64
+                        li.level2.events
+                            a(href="events#64-wit").white
+                                | 64Wit
 
-                        li.level2.events.nodisplay
-                            a(href="#").white Startup Battlefield Beta
+                        li.level2.events
+                            a(href="events#in-vested-interests").white
+                                | (in)Vested Interests
 
-                        li.level2.events.nodisplay
-                            a(href="#").white Music
+                        li.level2.events
+                            a(href="events#kilo-hertz").white
+                                | KiloHertz
 
                         li.level1
                             a(ui-sref="contact").yellow contact

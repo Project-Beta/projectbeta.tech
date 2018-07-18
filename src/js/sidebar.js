@@ -26,8 +26,7 @@ function openCloseFiles(target) {
 			}
 		}
 	};
-}
-
+};
 
 // Open-Close Tabs
 var buttons = document.querySelectorAll(".subject");

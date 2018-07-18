@@ -60,5 +60,5 @@ gulp.task('deploy', function() {
 });
 
 gulp.task('default', ['html', 'css', 'js'], function () {
-	gulp.watch(['stylesheets/**/*', 'views/**/*', 'src/js/**/*.js'], ['html', 'css', 'js']);
+	gulp.watch(['stylesheets/**/*.styl', 'views/**/*.pug', 'src/js/**/*.js'], ['html', 'css', 'js']);
 });
